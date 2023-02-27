@@ -48,7 +48,7 @@ const AddProduct = () => {
                   type="text"
                   name="productName"
                   placeholder="Product name"
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 text-black"
+                  className="w-full rounded-md focus:ring focus:ring-opacity-75  text-black p-2"
                 />
               </div>
               <div className="col-span-full sm:col-span-3">
@@ -60,7 +60,7 @@ const AddProduct = () => {
                   type="text"
                   name="category"
                   placeholder="First name"
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-black"
+                  className="w-full rounded-md focus:ring focus:ring-opacity-75  border-gray-700 text-black p-2"
                 />
               </div>
               <div className="col-span-full sm:col-span-3">
@@ -71,7 +71,7 @@ const AddProduct = () => {
                 required
                   type="file"
                   name="image"
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-white"
+                  className="w-full rounded-md focus:ring focus:ring-opacity-75  border-gray-700 text-white p-2"
                 />
               </div>
               <div className="col-span-full sm:col-span-3">
@@ -83,7 +83,7 @@ const AddProduct = () => {
                   type="text"
                   name="price"
                   placeholder="$"
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-black"
+                  className="w-full rounded-md focus:ring focus:ring-opacity-75  border-gray-700 text-black p-2"
                 />
               </div>
               <div className="col-span-full sm:col-span-3">
@@ -95,7 +95,7 @@ const AddProduct = () => {
                   type="text"
                   name="sellerName"
                   placeholder="Seller"
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-black"
+                  className="w-full rounded-md focus:ring focus:ring-opacity-75  border-gray-700 text-black p-2"
                 />
               </div>
               <div className="col-span-full sm:col-span-3">
@@ -107,7 +107,7 @@ const AddProduct = () => {
                   type="number"
                   name="stock"
                   placeholder="Stock"
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-black"
+                  className="w-full rounded-md focus:ring focus:ring-opacity-75  border-gray-700 text-black p-2"
                 />
               </div>
               <div className="col-span-full">
@@ -118,44 +118,10 @@ const AddProduct = () => {
                 required
                   type="number"
                   name="shipping"
-                  placeholder=""
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-black"
+                  placeholder="Shipping"
+                  className="w-full rounded-md focus:ring focus:ring-opacity-75  border-gray-700 text-black p-2"
                 />
               </div>
-              {/* <div className="col-span-full sm:col-span-2">
-                <label htmlFor="city" className="text-sm">
-                  City
-                </label>
-                <input 
-                required
-                  id="city"
-                  type="text"
-                  placeholder=""
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-black"
-                />
-              </div>
-              <div className="col-span-full sm:col-span-2">
-                <label htmlFor="state" className="text-sm">
-                  State / Province
-                </label>
-                <input
-                  id="state"
-                  type="text"
-                  placeholder=""
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-black"
-                />
-              </div>
-              <div className="col-span-full sm:col-span-2">
-                <label htmlFor="zip" className="text-sm">
-                  ZIP / Postal
-                </label>
-                <input
-                  id="zip"
-                  type="text"
-                  placeholder=""
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-black"
-                />
-              </div> */}
             </div>
           </fieldset>
             <button className="btn btn-success" type="submit">Success</button>

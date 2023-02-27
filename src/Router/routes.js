@@ -1,4 +1,5 @@
 import AddProduct from "../components/AddProduct/AddProduct";
+import Details from "../components/Home/Details";
 import Home from "../components/Home/Home";
 import Login from "../components/Login/Login";
 import Signup from "../components/Signup/Signup";
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/add-product",
         element: <AddProduct></AddProduct>,
+      },
+      {
+        path: "/details/:id",
+        element: <Details></Details>,
       },
       {
         path: "/login",
