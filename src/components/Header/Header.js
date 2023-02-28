@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { FaUser } from "react-icons/fa";
 import { AuthContext } from "../../context/AuthProvider";
 
 const Header = () => {
@@ -88,10 +89,14 @@ const Header = () => {
                 <Link to="/login">Login</Link>
               )}
             </li>
-            <li>
-              <p className="">{user?.displayName}</p>
-            </li>
           </ul>
+        </div>
+        <div className="navbar-end">
+          <li>
+            <p className="">
+              {user?.displayName ? user?.displayName : <FaUser></FaUser>}
+            </p>
+          </li>
         </div>
       </div>
     </section>
