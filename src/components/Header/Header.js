@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { FaUser } from "react-icons/fa";
+import { FaUsersSlash } from "react-icons/fa";
 import { AuthContext } from "../../context/AuthProvider";
 
 const Header = () => {
@@ -94,7 +94,7 @@ const Header = () => {
         <div className="navbar-end">
           <li>
             <p className="">
-              {user?.displayName ? user?.displayName : <FaUser></FaUser>}
+              {user?.displayName ? user?.displayName : <FaUsersSlash></FaUsersSlash>}
             </p>
           </li>
         </div>
