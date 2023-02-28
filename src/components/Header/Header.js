@@ -32,8 +32,8 @@ const Header = () => {
               <li>
                 <Link to="/home">Home</Link>
               </li>
-              <li>{user && <Link to="/add-product">Add Product</Link>}</li>
-              <li>{user && <Link to="/my-orders">My Orders</Link>}</li>
+              <li>{user && user.uid ? <Link to="/add-product">Add Product</Link> : undefined}</li>
+              <li>{user && user.uid ? <Link to="/my-orders">My Orders</Link> : undefined}</li>
               <li>
                 <Link to="/signup">Signup</Link>
               </li>
