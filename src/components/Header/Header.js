@@ -32,8 +32,17 @@ const Header = () => {
               <li>
                 <Link to="/home">Home</Link>
               </li>
-              <li>{user && user.uid ? <Link to="/add-product">Add Product</Link> : undefined}</li>
-              <li>{user && user.uid ? <Link to="/my-orders">My Orders</Link> : undefined}</li>
+
+              {user && user.uid ? (
+                <li>
+                  <Link to="/add-product">Add Product</Link>
+                </li>
+              ) : undefined}
+              {user && user.uid ? (
+                <li>
+                  <Link to="/my-orders">My Orders</Link>
+                </li>
+              ) : undefined}
               <li>
                 <Link to="/signup">Signup</Link>
               </li>
@@ -58,8 +67,17 @@ const Header = () => {
             <li>
               <Link to="/home">Home</Link>
             </li>
-            <li>{user && <Link to="/add-product">Add Product</Link>}</li>
-            <li>{user && <Link to="/my-orders">My Orders</Link>}</li>
+
+            {user && user.uid ? (
+              <li>
+                <Link to="/add-product">Add Product</Link>
+              </li>
+            ) : undefined}
+            {user && user.uid ? (
+              <li>
+                <Link to="/my-orders">My Orders</Link>
+              </li>
+            ) : undefined}
             <li>
               <Link to="/signup">Signup</Link>
             </li>
