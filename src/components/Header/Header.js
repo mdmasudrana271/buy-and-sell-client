@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
-import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider";
 
 const Header = () => {
   const { user, logout } = useContext(AuthContext);
-  console.log(user)
   return (
     <section>
       <div className="navbar bg-base-100">

@@ -4,6 +4,7 @@ import Home from "../components/Home/Home";
 import Login from "../components/Login/Login";
 import Signup from "../components/Signup/Signup";
 import Main from "../Layout/Main";
+import PrivateRoute from "./PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -22,11 +23,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/add-product",
-        element: <AddProduct></AddProduct>,
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
       },
       {
         path: "/details/:id",
         element: <Details></Details>,
+        loader: ({params})=>fetch(`http://localhost:5000/details/${params.id}`)
       },
       {
         path: "/login",

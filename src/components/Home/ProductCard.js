@@ -16,9 +16,9 @@ const ProductCard = ({product}) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title">
-            {product.name.length > 15 ? product.name.slice(0,15) : product.name}
+            {product?.name?.length > 15 ? product?.name?.slice(0,15) : product?.name}
           </h2>
-          <p>{product.category}</p>
+          <p className="text-start">Category: {product.category}</p>
           <div className="card-actions justify-end">
             <Link to={`/details/${product.id}`} className="badge badge-outline">More</Link>
             <div className="badge badge-outline">Products</div>
