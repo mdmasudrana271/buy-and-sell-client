@@ -30,10 +30,22 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to="/login">Login</Link>
+                <Link to="/home">Home</Link>
               </li>
+              <li>{user && <Link to="/add-product">Add Product</Link>}</li>
+              <li>{user && <Link to="/my-orders">My Orders</Link>}</li>
               <li>
                 <Link to="/signup">Signup</Link>
+              </li>
+              <li>
+                {user && user.uid ? (
+                  <p onClick={logout}>Logout</p>
+                ) : (
+                  <Link to="/login">Login</Link>
+                )}
+              </li>
+              <li>
+                <p className="">{user?.displayName}</p>
               </li>
             </ul>
           </div>
