@@ -7,7 +7,7 @@ const MyOrders = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/my-orders?email=${user.email}`, {
+    fetch(`https://buy-sell-server-roan.vercel.app/my-orders?email=${user.email}`, {
       headers: {
         "content-type": "application/json",
       },

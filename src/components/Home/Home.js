@@ -9,7 +9,7 @@ const Home = () => {
   const {booking, setBooking} = useContext(AuthContext)
 
   useEffect(() => {
-    fetch("http://localhost:5000/all-data")
+    fetch("https://buy-sell-server-roan.vercel.app/all-data")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -22,7 +22,7 @@ const Home = () => {
     const value = form.search.value;
     // setSearch(value)
 
-    fetch(`http://localhost:5000/search?search=${value}`)
+    fetch(`https://buy-sell-server-roan.vercel.app/search?search=${value}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

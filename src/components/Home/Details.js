@@ -20,7 +20,7 @@ const Details = () => {
       email: user.email,
     }
 
-    fetch("http://localhost:5000/order",{
+    fetch("https://buy-sell-server-roan.vercel.app/order",{
       method: "POST",
       headers: {
         'content-type': 'application/json',
