@@ -41,22 +41,25 @@ const Header = () => {
             Buy&Sell
           </Link>
         </div>
-        <div className="navbar-end pr-4 hidden lg:flex">
+        <div className="navbar-center pr-4 hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
               <Link to="/home">Home</Link>
             </li>
-            <li>
-              <Link to="/add-product">Add Product</Link>
-            </li>
+            <li>{user && <Link to="/add-product">Add Product</Link>}</li>
+            <li>{user && <Link to="/my-orders">My Orders</Link>}</li>
             <li>
               <Link to="/signup">Signup</Link>
             </li>
             <li>
-              {user && user.uid ? <p onClick={logout}>Logout</p> : <Link to="/login">Login</Link>}
+              {user && user.uid ? (
+                <p onClick={logout}>Logout</p>
+              ) : (
+                <Link to="/login">Login</Link>
+              )}
             </li>
             <li>
-            <p className="">{user?.displayName}</p>
+              <p className="">{user?.displayName}</p>
             </li>
           </ul>
         </div>
